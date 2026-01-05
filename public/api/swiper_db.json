@@ -62,6 +62,15 @@
         "/img/movies_shows/movies/defMovie.png",
         "/img/movies_shows/movies/defMovie.png"
       ]
+    },
+    {
+      "genre": "Movie 8",
+      "array": [
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png"
+      ]
     }
   ]
 }
