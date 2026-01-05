@@ -1,0 +1,67 @@
+{
+  "genreMovies": [
+    {
+      "genre": "Movie One",
+      "array": [
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png"
+      ]
+    },
+    {
+      "genre": "Movie Two",
+      "array": [
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png"
+      ]
+    },
+    {
+      "genre": "Movie 3",
+      "array": [
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png"
+      ]
+    },
+    {
+      "genre": "Movie 4",
+      "array": [
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png"
+      ]
+    },
+    {
+      "genre": "Movie 5",
+      "array": [
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png"
+      ]
+    },
+    {
+      "genre": "Movie 6",
+      "array": [
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png"
+      ]
+    },
+    {
+      "genre": "Movie 7",
+      "array": [
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png",
+        "/img/movies_shows/movies/defMovie.png"
+      ]
+    }
+  ]
+}
