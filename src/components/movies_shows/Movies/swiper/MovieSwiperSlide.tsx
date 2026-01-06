@@ -10,7 +10,7 @@ export default function MovieSwiperSlide({
     <div className="slide bg-[#1A1A1A] p-[30px] rounded-[12px]">
       <div className="slide-movies m-auto rounded-[12px] flex flex-wrap gap-[10px] max-h-[342px] w-[230px] items-center">
         <img
-            loading='lazy'
+          loading="lazy"
           src={array[0]}
           alt="1"
           className="movies-imgs rounded-[15px] w-[100px] h-[100px]"

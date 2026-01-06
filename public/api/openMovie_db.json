@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Avengers: Endgame",
+    "description": "The Avengers assemble once more in a final stand against Thanos to restore balance to the universe.",
+    "releasedYear": 2019,
+    "availableLanguages": ["English", "Ukrainian", "Spanish", "Hindi"],
+    "rating": 4.8,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "director": "Anthony Russo & Joe Russo",
+    "music": ["Alan Silvestri"],
+    "cast": [
+      "Robert Downey Jr.",
+      "Chris Evans",
+      "Chris Hemsworth",
+      "Scarlett Johansson",
+      "Mark Ruffalo"
+    ],
+    "reviews": [
+      {
+        "nickname": "MovieFan21",
+        "country": "USA",
+        "rating": 5,
+        "text": "An emotional and epic conclusion to a decade of storytelling."
+      },
+      {
+        "nickname": "LizaK",
+        "country": "Ukraine",
+        "rating": 4.5,
+        "text": "Дуже масштабний фільм, особливо фінальна битва!"
+      }
+    ]
+  },
+  {
+    "title": "Kantara",
+    "description": "A mystical tale set in a coastal village where tradition, faith, and human greed collide.",
+    "releasedYear": 2022,
+    "availableLanguages": ["Kannada", "Hindi", "Tamil", "Telugu", "Malayalam"],
+    "rating": 4.5,
+    "genres": ["Action", "Drama", "Thriller"],
+    "director": "Rishab Shetty",
+    "music": ["B. Ajaneesh Loknath"],
+    "cast": ["Rishab Shetty", "Sapthami Gowda", "Kishore"],
+    "reviews": [
+      {
+        "nickname": "Ravi89",
+        "country": "India",
+        "rating": 4.5,
+        "text": "Powerful storytelling with stunning folklore elements."
+      },
+      {
+        "nickname": "Andrii_dev",
+        "country": "Ukraine",
+        "rating": 4,
+        "text": "Цікавий фільм з атмосферою та сильною музикою."
+      }
+    ]
+  }
+]

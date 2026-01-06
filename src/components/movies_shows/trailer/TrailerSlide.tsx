@@ -26,7 +26,10 @@ export default function TrailerSlide({
         </p>
       </div>
       <div className="trailer-buttons flex justify-center items-center gap-[20px]">
-        <button className="buttons-play px-[24px] py-[14px] text-white font-[Manrope] text-[18px] font-semibold flex gap-[4px] items-center cursor-pointer bg-[#E50000] rounded-[8px]">
+        <button
+          className="buttons-play px-[24px] py-[14px] text-white font-[Manrope] text-[18px] font-semibold flex gap-[4px] items-center cursor-pointer bg-[#E50000] rounded-[8px]"
+          onClick={() => {}}
+        >
           <FaPlay className="ml w-[17.84px] h-[19.19px]" />
           Play Now
         </button>

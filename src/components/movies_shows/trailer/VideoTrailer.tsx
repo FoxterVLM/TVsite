@@ -1,5 +1,5 @@
 import TrailerSlide from "./TrailerSlide.tsx";
-import Avengers from "../../../../public/img/movies_shows/Avengers.png";
+import Avengers from "../../../../public/img/movies_imgs/Avengers.png";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
