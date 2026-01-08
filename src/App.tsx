@@ -6,23 +6,23 @@ import Home from "./pages/Home.tsx";
 import Support from "./pages/Support.tsx";
 import Subscription from "./pages/Subscription.tsx";
 import { useGetMovieSwiper } from "./stores/useGetMovieSwiper.ts";
-import {useMovieData} from "./stores/useMovieData.ts";
+import { useMovieData } from "./stores/useMovieData.ts";
 import { useEffect } from "react";
 import OpenBlock from "./components/movies_open/OpenBlock.tsx";
 
 function App() {
   const { getData } = useGetMovieSwiper();
-    const { getCurrentMovie } = useMovieData();
+  const { getCurrentMovie } = useMovieData();
 
   useEffect(() => {
     getData();
-    getCurrentMovie('Avengers: Endgame');
-  });
+    getCurrentMovie("Avengers: Endgame"); //delete
+  }, []);
 
   return (
     <Router>
       <Nav />
-        <OpenBlock/>
+      <OpenBlock />
       <Routes>
         <Route path="/" element={<Movies_Shows />} />
         <Route path="/home" element={<Home />} />

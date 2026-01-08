@@ -1,6 +1,5 @@
 import { create } from "zustand";
 import axios from "axios";
-import {useCurrentPage} from "./useCurrentPage.ts";
 
 type ReviewType = {
   nickname: string;
@@ -8,6 +7,12 @@ type ReviewType = {
   rating: number;
   text: string;
 };
+
+type DirectorType = {
+  name: string;
+  country: string;
+  img: string;
+}
 
 type MovieType = {
   title: string;
@@ -17,8 +22,8 @@ type MovieType = {
   availableLanguages: string[];
   rating: number;
   genres: string[];
-  director: string;
-  music: string[];
+  director: DirectorType;
+  music: DirectorType;
   cast: string[];
   reviews: ReviewType[];
 };
@@ -33,17 +38,21 @@ type Props = {
 export const useMovieData = create<Props>((set) => ({
   currentMovie: null,
   getCurrentMovie: async (byTitle) => {
-      try{
-          const response = await axios.get<MovieType[]>("/api/openMovie_db.json")
-              .then(response => response.data)
+    try {
+      const response = await axios
+        .get<MovieType[]>("/api/openMovie_db.json")
+        .then((response) => response.data);
 
-          const movie = response.find((movie: MovieType) => movie.title === byTitle)
-          // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-          movie !== undefined ? set({currentMovie: movie}) : set({currentMovie: null})
-      }catch (error) {
-        set({currentMovie: null});
-        alert(error);
-      }
-
+      const movie = response.find(
+        (movie: MovieType) => movie.title === byTitle,
+      );
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+      movie !== undefined
+        ? set({ currentMovie: movie })
+        : set({ currentMovie: null });
+    } catch (error) {
+      set({ currentMovie: null });
+      alert(error);
+    }
   },
 }));

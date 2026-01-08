@@ -2,18 +2,36 @@
   {
     "title": "Avengers: Endgame",
     "description": "The Avengers assemble once more in a final stand against Thanos to restore balance to the universe.",
+    "img": "/img/movies_imgs/Avengers.png",
     "releasedYear": 2019,
-    "availableLanguages": ["English", "Ukrainian", "Spanish", "Hindi"],
-    "rating": 4.8,
+    "availableLanguages": ["Kannada", "Hindi", "Tamil", "Telugu", "Malayalam"],
+    "rating": 4.5,
     "genres": ["Action", "Adventure", "Sci-Fi"],
-    "director": "Anthony Russo & Joe Russo",
-    "music": ["Alan Silvestri"],
+    "director": {
+      "name": "Anthony Russo & Joe Russo",
+      "country": "India",
+      "img": "/img/cast/Cast.svg"
+    },
+    "music": {
+      "name": "Anthony Russo & Joe Russo",
+      "country": "India",
+      "img": "/img/cast/Cast.svg"
+    },
     "cast": [
-      "Robert Downey Jr.",
-      "Chris Evans",
-      "Chris Hemsworth",
-      "Scarlett Johansson",
-      "Mark Ruffalo"
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg"
     ],
     "reviews": [
       {
@@ -33,12 +51,21 @@
   {
     "title": "Kantara",
     "description": "A mystical tale set in a coastal village where tradition, faith, and human greed collide.",
+    "img": "/img/movies_imgs/Kantara.png",
     "releasedYear": 2022,
     "availableLanguages": ["Kannada", "Hindi", "Tamil", "Telugu", "Malayalam"],
     "rating": 4.5,
     "genres": ["Action", "Drama", "Thriller"],
-    "director": "Rishab Shetty",
-    "music": ["B. Ajaneesh Loknath"],
+    "director": {
+      "name": "Anthony Russo & Joe Russo",
+      "country": "India",
+      "img": "/img/cast/Cast.svg"
+    },
+    "music": {
+      "name": "Anthony Russo & Joe Russo",
+      "country": "India",
+      "img": "/img/cast/Cast.svg"
+    },
     "cast": ["Rishab Shetty", "Sapthami Gowda", "Kishore"],
     "reviews": [
       {

@@ -11,7 +11,7 @@ export default function Trailer() {
     <>
       {currentMovie !== null ? (
         <div
-          className="videoTrailer w-full min-h-[835px] max-w-[1594px] m-auto mt-[50px] flex flex-col justify-center items-center px-[200px] pt-[508px] pb-[126px] gap-[20px]"
+          className="videoTrailer w-full min-h-[835px] max-w-[1594px] m-auto mt-[50px] flex flex-col justify-center items-center px-[200px] pt-[508px] pb-[126px] gap-[20px] mb-[100px]"
           style={{ backgroundImage: `url(${currentMovie.img})` }}
         >
           <div className="trailer-title flex flex-col gap-[4px]">
