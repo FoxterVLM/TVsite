@@ -1,21 +1,17 @@
-import {useMovieData} from "../../../stores/useMovieData.ts";
-import { FaStar } from "react-icons/fa";
-import HalfStar from "./HalfStar.tsx";
+import {FaStar} from "react-icons/fa";
+import HalfStar from "../ratings/HalfStar.tsx";
 
-export default function Rating () {
+export default function ReviewRating({gotRating}: {gotRating: number}) {
 
-    const {currentMovie} = useMovieData();
-
-    const rating: number = currentMovie?.rating ?? 0;
+    const rating: number = gotRating ?? 0;
     const fullStars: number = Math.floor(rating);
     const emptyStars: number = Math.floor(5 - rating);
     const isHalfStar: boolean = rating/2 > fullStars/2;
 
     return (
-        <div className='rating-block py-[16px] pl-[16px] pr-[21px] bg-[#141414] max-w-[200px] rounded-[8px] mb-[30px]'>
-            <h5 className='rating-name text-white text-[20px] font-[Manrope] font-semibold'>IMDb</h5>
-            <div className="rating flex gap-[4px] items-center">
-                <div className="rating-stars flex gap-[2px]">
+        <div className='rating-review py-[6px] px-[10px] w-fit bg-[#141414] rounded-full mb-[30px] border-1 border-[#262626]'>
+            <div className="rating flex gap-[4px] items-center text-[#999999]">
+                <div className="review-stars flex gap-[2px]">
                     {
                         !isHalfStar &&
                         [...Array(fullStars)].map((i: number) => (
@@ -46,7 +42,7 @@ export default function Rating () {
                         ))
                     }
                 </div>
-                <p className="rating-number text-[20px] font-medium text-white">{currentMovie?.rating}</p>
+                <p className="rating-number text-[20px] font-medium text-[#999999]">{gotRating}</p>
             </div>
         </div>
     )

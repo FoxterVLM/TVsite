@@ -17,7 +17,7 @@ export default function Characteristics() {
     <>
       {currentMovie !== null ? (
         <div className="movie-characteristics ml-[118px] flex gap-[20px] font-[Manrope]">
-          <div className="left-desc flex flex-col justify-between gap-y-[30px]">
+          <div className="left-desc flex flex-col gap-y-[30px]">
             <div className="desc-description p-[50px] bg-[#1A1A1A] max-w-[1057px] rounded-[12px]">
               <h4 className="description-title text-[18px] font-medium text-[#999999] mb-[14px]">Description</h4>
               <p className="description-paragraph text-[18px] text-white font-medium max-w-[957px]">

@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import axios from "axios";
 
-type ReviewType = {
+export type ReviewType = {
   nickname: string;
   country: string;
   rating: number;
@@ -42,7 +42,6 @@ export const useMovieData = create<Props>((set) => ({
       const response = await axios
         .get<MovieType[]>("/api/openMovie_db.json")
         .then((response) => response.data);
-
       const movie = response.find(
         (movie: MovieType) => movie.title === byTitle,
       );

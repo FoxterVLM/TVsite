@@ -24,6 +24,7 @@ export default function CastSwiper() {
       <Swiper
           className="relative swiper-container"
         modules={[Navigation, Pagination, A11y]}
+          loop={true}
         spaceBetween={20}
         slidesPerView={8}
         speed={500}
@@ -33,7 +34,7 @@ export default function CastSwiper() {
         }}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        onSlideChange={() => console.log("slide change232222")}
       >
           <div className="swiper-buttons absolute top-0 z-10 flex items-center gap-[30px]">
               <h5 className='cast-title w-[810px] font-medium text-[18px] text-[#999999]'>Cast</h5>
