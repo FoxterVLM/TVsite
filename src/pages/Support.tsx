@@ -53,7 +53,7 @@ export default function Support() {
           {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
         </div>
 
-        <button className="bg-red-600 p-3 rounded col-span-2" onClick={submitForm}>
+        <button className="bg-red-600 rounded col-span-2" onClick={submitForm}>
           Send Message
         </button>
       </div>
