@@ -5,9 +5,12 @@ export default function Support() {
 
   return (
     <div className="bg-neutral-900 text-white min-h-screen p-10">
-      <h1 className="text-4xl font-bold">Welcome to our support page!</h1>
 
-      <div className="mt-10 grid grid-cols-2 gap-4 max-w-2xl">
+  <h1 className="text-4xl font-bold">
+    Welcome to our support page!
+  </h1>
+
+   <div className="mt-10 grid grid-cols-2 gap-4 max-w-2xl">
         <div>
           <input
             className="p-3 bg-neutral-800 rounded w-full"
