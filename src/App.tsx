@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import Support from './pages/Support'
 import './index.css'
+import Support from './pages/Support'
+import Subscription from './pages/Subscription'
 
 function App() {
-  const [] = useState(0)
-
   return (
     <>
     
       <div>
         <Support />
+      </div>
+      <div>
+        <Subscription />
       </div>
     </>
   )

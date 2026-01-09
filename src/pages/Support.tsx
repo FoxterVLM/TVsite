@@ -78,17 +78,17 @@ export default function Support() {
             {errors.message && <p className="text-red-500 text-sm mt-2">{errors.message}</p>}
           </div>
 
-          <button className="bg-red-600 hover:bg-red-700 p-4 rounded-xl col-span-2 font-medium transition-all duration-200 hover:shadow-lg" onClick={submitForm}>
+          <button className="p-4 rounded-xl col-span-2 font-medium hover:shadow-lg hover:scale-105 transition-transform duration-300" onClick={submitForm}>
             Send Message
           </button>
         </div>
       </div>
 
-      {/* FAQ Section (под формой) */}
+     
       <div>
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-3xl font-bold">Frequently Asked Questions</h2>
-          <button className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap">
+          <button className="hover:scale-105 transition-transform duration-300 px-6 py-2 rounded-full font-medium whitespace-nowrap">
             Ask a Question
           </button>
         </div>
