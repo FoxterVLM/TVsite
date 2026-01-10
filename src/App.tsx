@@ -5,10 +5,12 @@ import Nav from "./components/Nav.tsx";
 import Home from "./pages/Home.tsx";
 import Support from "./pages/Support.tsx";
 import Subscription from "./pages/Subscription.tsx";
+import OpenBlock from "./components/movies_open/OpenBlock.tsx";
+
 import { useGetMovieSwiper } from "./stores/useGetMovieSwiper.ts";
 import { useMovieData } from "./stores/useMovieData.ts";
+
 import { useEffect } from "react";
-import OpenBlock from "./components/movies_open/OpenBlock.tsx";
 
 function App() {
   const { getData } = useGetMovieSwiper();
@@ -22,6 +24,7 @@ function App() {
   return (
     <Router>
       <Nav />
+      {/* delete openblock */}
       <OpenBlock />
       <Routes>
         <Route path="/" element={<Movies_Shows />} />

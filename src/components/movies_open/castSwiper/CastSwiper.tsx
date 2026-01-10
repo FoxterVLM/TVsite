@@ -22,27 +22,29 @@ export default function CastSwiper() {
   return (
     <div className="cast-swiper max-w-[957px] ">
       <Swiper
-          className="relative swiper-container"
+        className="relative swiper-container"
         modules={[Navigation, Pagination, A11y]}
-          loop={true}
+        loop={true}
         spaceBetween={20}
         slidesPerView={8}
         speed={500}
         navigation={{
-            nextEl: ".nextCast",
-            prevEl: ".prevCast",
+          nextEl: ".nextCast",
+          prevEl: ".prevCast",
         }}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change232222")}
       >
-          <div className="swiper-buttons absolute top-0 z-10 flex items-center gap-[30px]">
-              <h5 className='cast-title w-[810px] font-medium text-[18px] text-[#999999]'>Cast</h5>
-              <div className="btns flex items-center gap-[10px]">
-                  <CastPrev />
-                  <CastNext />
-              </div>
+        <div className="swiper-buttons absolute top-0 z-10 flex items-center gap-[30px]">
+          <h5 className="cast-title w-[810px] font-medium text-[18px] text-[#999999]">
+            Cast
+          </h5>
+          <div className="btns flex items-center gap-[10px]">
+            <CastPrev />
+            <CastNext />
           </div>
+        </div>
         {currentMovie &&
           currentMovie.cast.map((actor, i) => (
             <SwiperSlide key={i}>

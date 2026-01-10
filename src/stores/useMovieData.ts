@@ -12,7 +12,7 @@ type DirectorType = {
   name: string;
   country: string;
   img: string;
-}
+};
 
 type MovieType = {
   title: string;
