@@ -1,17 +1,21 @@
 .movie-swiper .swiper-pagination-bullet {
-    width: 16px;
-    height: 4px;
-    background: #4c4c4c;
-    border-radius: 100px;
-    transition: all 0.4s ease-in-out;
+  width: 16px;
+  height: 4px;
+  background: #4c4c4c;
+  border-radius: 100px;
+  transition: all 0.4s ease-in-out;
 }
 .movie-swiper .swiper-pagination-bullet-active {
-    width: 23px;
-    background: #e50000;
+  width: 23px;
+  background: #e50000;
 }
 .movie-swiper .swiper-pagination {
-    position: absolute;
-    z-index: 1000000000;
-
-    --swiper-pagination-bottom: 400px;
+  position: absolute;
+  top: 80px;
+  width: fit-content;
+  left: 1340px;
+  z-index: 10;
+}
+.movie-swiper .swiper {
+  position: static;
 }

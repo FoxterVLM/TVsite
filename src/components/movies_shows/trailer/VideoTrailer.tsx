@@ -1,5 +1,6 @@
 import TrailerSlide from "./TrailerSlide.tsx";
-import Avengers from "../../../../public/img/movies_shows/Avengers.png";
+import Avengers from "../../../../public/img/movies_imgs/Avengers.png";
+import Kantara from '../../../../public/img/movies_imgs/Kantara.svg'
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
@@ -41,7 +42,23 @@ export default function VideoTrailer() {
         <SwiperSlide>
           <TrailerSlide
             img={Avengers}
-            title="Avengers : Endgame"
+            title="Avengers: Endgame"
+            description="With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen."
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <TrailerSlide
+            img={Kantara}
+            title="Kantara"
+            description="A gripping tale of tradition, nature, and heroism, where a villager fights to protect his land and culture."
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <TrailerSlide
+            img={Avengers}
+            title="Avengers: Endgame"
             description="With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen."
           />
         </SwiperSlide>
@@ -49,23 +66,7 @@ export default function VideoTrailer() {
         <SwiperSlide>
           <TrailerSlide
             img={Avengers}
-            title="Avengers : Endgame"
-            description="With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen."
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <TrailerSlide
-            img={Avengers}
-            title="Avengers : Endgame"
-            description="With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen."
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <TrailerSlide
-            img={Avengers}
-            title="Avengers : Endgame"
+            title="Avengers: Endgame"
             description="With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen."
           />
         </SwiperSlide>

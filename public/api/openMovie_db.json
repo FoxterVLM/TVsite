@@ -1,0 +1,136 @@
+[
+  {
+    "title": "Avengers: Endgame",
+    "description": "The Avengers assemble once more in a final stand against Thanos to restore balance to the universe.",
+    "img": "/img/movies_imgs/Avengers.png",
+    "releasedYear": 2019,
+    "availableLanguages": ["Kannada", "Hindi", "Tamil", "Telugu", "Malayalam"],
+    "rating": 4.5,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "director": {
+      "name": "Anthony Russo & Joe Russo",
+      "country": "India",
+      "img": "/img/cast/Cast.svg"
+    },
+    "music": {
+      "name": "Anthony Russo & Joe Russo",
+      "country": "India",
+      "img": "/img/cast/Cast.svg"
+    },
+    "cast": [
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg",
+      "/img/cast/Cast.svg"
+    ],
+    "reviews": [
+      {
+        "nickname": "MovieFan21",
+        "country": "USA",
+        "rating": 5,
+        "text": "An emotional and epic conclusion to a decade of storytelling."
+      },
+      {
+        "nickname": "LizaK",
+        "country": "Ukraine",
+        "rating": 4.5,
+        "text": "Дуже масштабний фільм, особливо фінальна битва!"
+      },
+      {
+        "nickname": "MovieFan21",
+        "country": "USA",
+        "rating": 5,
+        "text": "An emotional and epic conclusion to a decade of storytelling."
+      },
+      {
+        "nickname": "MovieFan21",
+        "country": "USA",
+        "rating": 5,
+        "text": "An emotional and epic conclusion to a decade of storytelling."
+      },
+      {
+        "nickname": "MovieFan21",
+        "country": "USA",
+        "rating": 5,
+        "text": "An emotional and epic conclusion to a decade of storytelling."
+      },
+      {
+        "nickname": "MovieFan21",
+        "country": "USA",
+        "rating": 5,
+        "text": "An emotional and epic conclusion to a decade of storytelling."
+      }
+    ]
+  },
+  {
+    "title": "Kantara",
+    "description": "A gripping tale of tradition, nature, and heroism, where a villager fights to protect his land and culture.",
+    "img": "/img/movies_imgs/Kantara.svg",
+    "releasedYear": 2022,
+    "availableLanguages": ["Kannada", "Hindi", "Tamil", "Telugu", "Malayalam"],
+    "rating": 4.6,
+    "genres": ["Action", "Drama", "Thriller"],
+    "director": {
+      "name": "Rishab Shetty",
+      "country": "India",
+      "img": "/img/cast/CastKantara.svg"
+    },
+    "music": {
+      "name": "B. Ajaneesh Loknath",
+      "country": "India",
+      "img": "/img/cast/CastKantara.svg"
+    },
+    "cast": [
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg"
+    ],
+    "reviews": [
+      {
+        "nickname": "CinemaBuff88",
+        "country": "India",
+        "rating": 5,
+        "text": "A masterful blend of folklore, action, and emotion!"
+      },
+      {
+        "nickname": "ThrillSeeker",
+        "country": "USA",
+        "rating": 4.5,
+        "text": "The story and visuals are stunning, highly recommend."
+      },
+      {
+        "nickname": "MovieFan21",
+        "country": "USA",
+        "rating": 4.7,
+        "text": "Intense, gripping, and culturally rich!"
+      },
+      {
+        "nickname": "LizaK",
+        "country": "Ukraine",
+        "rating": 4.6,
+        "text": "Дуже захоплюючий фільм з чудовою акторською грою!"
+      }
+    ]
+  }
+]
