@@ -74,35 +74,62 @@
   },
   {
     "title": "Kantara",
-    "description": "A mystical tale set in a coastal village where tradition, faith, and human greed collide.",
-    "img": "/img/movies_imgs/Kantara.png",
+    "description": "A gripping tale of tradition, nature, and heroism, where a villager fights to protect his land and culture.",
+    "img": "/img/movies_imgs/Kantara.svg",
     "releasedYear": 2022,
     "availableLanguages": ["Kannada", "Hindi", "Tamil", "Telugu", "Malayalam"],
-    "rating": 4.5,
+    "rating": 4.6,
     "genres": ["Action", "Drama", "Thriller"],
     "director": {
-      "name": "Anthony Russo & Joe Russo",
+      "name": "Rishab Shetty",
       "country": "India",
-      "img": "/img/cast/Cast.svg"
+      "img": "/img/cast/CastKantara.svg"
     },
     "music": {
-      "name": "Anthony Russo & Joe Russo",
+      "name": "B. Ajaneesh Loknath",
       "country": "India",
-      "img": "/img/cast/Cast.svg"
+      "img": "/img/cast/CastKantara.svg"
     },
-    "cast": ["Rishab Shetty", "Sapthami Gowda", "Kishore"],
+    "cast": [
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg",
+      "/img/cast/CastKantara.svg"
+    ],
     "reviews": [
       {
-        "nickname": "Ravi89",
+        "nickname": "CinemaBuff88",
         "country": "India",
-        "rating": 4.5,
-        "text": "Powerful storytelling with stunning folklore elements."
+        "rating": 5,
+        "text": "A masterful blend of folklore, action, and emotion!"
       },
       {
-        "nickname": "Andrii_dev",
+        "nickname": "ThrillSeeker",
+        "country": "USA",
+        "rating": 4.5,
+        "text": "The story and visuals are stunning, highly recommend."
+      },
+      {
+        "nickname": "MovieFan21",
+        "country": "USA",
+        "rating": 4.7,
+        "text": "Intense, gripping, and culturally rich!"
+      },
+      {
+        "nickname": "LizaK",
         "country": "Ukraine",
-        "rating": 4,
-        "text": "Цікавий фільм з атмосферою та сильною музикою."
+        "rating": 4.6,
+        "text": "Дуже захоплюючий фільм з чудовою акторською грою!"
       }
     ]
   }

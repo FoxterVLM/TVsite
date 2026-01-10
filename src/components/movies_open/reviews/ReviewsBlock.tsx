@@ -10,7 +10,7 @@ export default function ReviewsBlock() {
   return (
     <>
       {!isClicked ? (
-        <div className="reviews p-[50px] bg-[#1A1A1A] max-w-[1057px]">
+        <div className="reviews p-[50px] bg-[#1A1A1A] max-w-[1057px] rounded-[12px]">
           <div className="reviews-top flex justify-between items-center mb-[40px]">
             <h6 className="top-title text-[18px] text-[#999999] font-medium">
               Reviews

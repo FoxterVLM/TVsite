@@ -6,6 +6,6 @@ type CurrentPage = {
 };
 
 export const useCurrentPage = create<CurrentPage>((set) => ({
-  page: "ms", // change later to home, ms - movies_shows
+  page: "home",
   setPage: (changeTo: string) => set({ page: changeTo }),
 }));

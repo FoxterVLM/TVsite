@@ -14,23 +14,21 @@ import { useEffect } from "react";
 
 function App() {
   const { getData } = useGetMovieSwiper();
-  const { getCurrentMovie } = useMovieData();
+  const { currentMovie } = useMovieData();
 
   useEffect(() => {
     getData();
-    getCurrentMovie("Avengers: Endgame"); //delete
   }, []);
 
   return (
     <Router>
       <Nav />
-      {/* delete openblock */}
-      <OpenBlock />
       <Routes>
-        <Route path="/" element={<Movies_Shows />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/ms" element={<Movies_Shows />} />
+        <Route path="/" element={<Home />} />
         <Route path="/sub" element={<Subscription />} />
         <Route path="/support" element={<Support />} />
+        <Route path={"/" + currentMovie?.title} element={<OpenBlock/>}/>
       </Routes>
     </Router>
   );

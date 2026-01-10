@@ -18,14 +18,14 @@ export default function Nav() {
       </Link>
       <div className="nav-pages text-white flex px-[40px] py-[10px] gap-[30px]  rounded-[12px] border-[#1F1F1F] border-4 bg-[#0D0C0C] items-center">
         <Link
-          to="/home"
+          to="/"
           onClick={() => setPage("home")}
           className={page === "home" ? defClassName : className}
         >
           Home
         </Link>
         <Link
-          to="/"
+          to="/ms"
           onClick={() => setPage("ms")}
           className={page === "ms" ? defClassName : className}
         >
