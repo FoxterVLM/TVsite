@@ -28,7 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sub" element={<Subscription />} />
         <Route path="/support" element={<Support />} />
-        <Route path={"/" + currentMovie?.title} element={<OpenBlock/>}/>
+        <Route path={'/ms' + "/" + currentMovie?.title} element={<OpenBlock/>}/>
       </Routes>
     </Router>
   );

@@ -33,7 +33,7 @@ export default function TrailerSlide({
       </div>
       <div className="trailer-buttons flex justify-center items-center gap-[20px]">
         <Link
-            to={'/' + title}
+            to={'/ms' + "/" + title}
           className="buttons-play px-[24px] py-[14px] text-white font-[Manrope] text-[18px] font-semibold flex gap-[4px] items-center cursor-pointer bg-[#E50000] rounded-[8px]"
           onClick={() => getCurrentMovie(title)} // change to title
         >

@@ -16,7 +16,7 @@ export default function Nav() {
       <Link to="/" className="navbar-logo mr-[307px]">
         <img src={Logo} alt="Logo" className="logo-img cursor-pointer" />
       </Link>
-      <div className="nav-pages text-white flex px-[40px] py-[10px] gap-[30px]  rounded-[12px] border-[#1F1F1F] border-4 bg-[#0D0C0C] items-center">
+      <div className="nav-pages text-white flex px-[40px] py-[10px] gap-[30px]  rounded-[12px] border-[#1F1F1F] border-4 bg-[#0F0F0F] items-center">
         <Link
           to="/"
           onClick={() => setPage("home")}
