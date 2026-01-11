@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 export default function Subscription() {
 
   const plans = [
@@ -8,6 +10,11 @@ export default function Subscription() {
 
   const features = ['HD Streaming', 'Unlimited Movies', 'No Ads', 'Offline Viewing'];
 
+  const [open, setOpen] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState<{ name: string; desc: string; price: number } | null>(null);
+  const [cardNumber, setCardNumber] = useState('');
+  const [expiry, setExpiry] = useState('');
+  const [cvc, setCvc] = useState('');
   return (
     <div className="min-h-screen bg-neutral-950 text-white px-6 py-16 lg:px-200">
 
@@ -41,14 +48,92 @@ export default function Subscription() {
               ${plan.price}
               <span className="text-sm text-gray-400"> / month</span>
             </div>
-
-            <button className="w-full bg-red-600 hover:bg-red-700 py-2 rounded-lg hover:scale-110 transition-transform duration-300">
-              Get started
-            </button>
+<button
+  onClick={() => {
+    setSelectedPlan(plan);
+    setOpen(true);
+  }}
+  className="w-full bg-red-600 hover:bg-red-700 py-2 rounded-lg
+             hover:scale-110 transition-transform duration-300"
+>
+  Get started
+</button>
           </div>
         ))}
       </section>
 
+      {open && selectedPlan && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+          <div className="bg-neutral-900 rounded-xl p-6 w-full max-w-md">
+            <h3 className="text-xl font-bold mb-4">
+              Payment details for {selectedPlan.name}
+            </h3>
+
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                // Handle payment logic here
+                alert(`Payment processed for ${selectedPlan.name}!`);
+                setOpen(false);
+                setSelectedPlan(null);
+                setCardNumber('');
+                setExpiry('');
+                setCvc('');
+              }}
+              className="space-y-4"
+            >
+              <input
+                type="text"
+                placeholder="Card number"
+                value={cardNumber}
+                onChange={(e) => setCardNumber(e.target.value)}
+                className="w-full p-3 rounded bg-neutral-800 text-white outline-none"
+                required
+              />
+
+              <div className="flex gap-3">
+                <input
+                  type="text"
+                  placeholder="MM / YY"
+                  value={expiry}
+                  onChange={(e) => setExpiry(e.target.value)}
+                  className="w-full p-3 rounded bg-neutral-800 text-white outline-none"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="CVC"
+                  value={cvc}
+                  onChange={(e) => setCvc(e.target.value)}
+                  className="w-full p-3 rounded bg-neutral-800 text-white outline-none"
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-red-600 py-2 rounded-lg hover:bg-red-700 transition"
+              >
+                Pay ${selectedPlan.price}
+              </button>
+
+              <button
+                type="button"
+                onClick={() => {
+                  setOpen(false);
+                  setSelectedPlan(null);
+                  setCardNumber('');
+                  setExpiry('');
+                  setCvc('');
+                }}
+                className="w-full text-gray-400 hover:text-white text-sm"
+              >
+                Cancel
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
 
       <section className="max-w-5xl mx-auto mb-20">
         <h2 className="text-2xl font-bold mb-6">
