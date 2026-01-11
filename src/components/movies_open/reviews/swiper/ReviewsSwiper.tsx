@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 import "./reviewPagination.css";
 
 import { useMovieData } from "../../../../stores/useMovieData.ts";
-import {useReview} from "../../../../stores/useReview.ts";
+import { useReview } from "../../../../stores/useReview.ts";
 
 import ReviewBox from "../ReviewBox.tsx";
 import ReviewPrev from "./ReviewPrev.tsx";
@@ -21,7 +21,7 @@ import ReviewNext from "./ReviewNext.tsx";
 
 export default function ReviewsSwiper() {
   const { currentMovie } = useMovieData();
-  const {nickname, country, rating, text, isAdded} = useReview();
+  const { nickname, country, rating, text, isAdded } = useReview();
 
   return (
     <div className="reviews-swiper">
@@ -56,13 +56,16 @@ export default function ReviewsSwiper() {
                 />
               </SwiperSlide>
             ))}
-            {
-                isAdded &&
-                <SwiperSlide>
-                    <ReviewBox nickname={nickname} country={country} rating={rating} text={text} />
-                </SwiperSlide>
-            }
-
+          {isAdded && (
+            <SwiperSlide>
+              <ReviewBox
+                nickname={nickname}
+                country={country}
+                rating={rating}
+                text={text}
+              />
+            </SwiperSlide>
+          )}
         </div>
         <div className="review-pag-buttons flex justify-center mt-[30px] gap-[20px]">
           <ReviewPrev />

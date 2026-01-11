@@ -1,6 +1,6 @@
 import TrailerSlide from "./TrailerSlide.tsx";
 import Avengers from "../../../../public/img/movies_imgs/Avengers.png";
-import Kantara from '../../../../public/img/movies_imgs/Kantara.svg'
+import Kantara from "../../../../public/img/movies_imgs/Kantara.svg";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
@@ -26,6 +26,7 @@ export default function VideoTrailer() {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
+        loop={true}
         slidesPerView={1}
         speed={500}
         navigation={{

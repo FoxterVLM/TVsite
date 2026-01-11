@@ -1,7 +1,7 @@
 {
   "genreMovies": [
     {
-      "genre": "Movie One",
+      "genre": "Genre 1",
       "array": [
         "/img/movies_shows/movies/defMovie.png",
         "/img/movies_shows/movies/defMovie.png",
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "genre": "Movie Two",
+      "genre": "Genre 2",
       "array": [
         "/img/movies_shows/movies/defMovie.png",
         "/img/movies_shows/movies/defMovie.png",
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "genre": "Movie 3",
+      "genre": "Genre 3",
       "array": [
         "/img/movies_shows/movies/defMovie.png",
         "/img/movies_shows/movies/defMovie.png",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "genre": "Movie 4",
+      "genre": "Genre 4",
       "array": [
         "/img/movies_shows/movies/defMovie.png",
         "/img/movies_shows/movies/defMovie.png",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "genre": "Movie 5",
+      "genre": "Genre 5",
       "array": [
         "/img/movies_shows/movies/defMovie.png",
         "/img/movies_shows/movies/defMovie.png",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "genre": "Movie 6",
+      "genre": "Genre 6",
       "array": [
         "/img/movies_shows/movies/defMovie.png",
         "/img/movies_shows/movies/defMovie.png",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "genre": "Movie 7",
+      "genre": "Genre 7",
       "array": [
         "/img/movies_shows/movies/defMovie.png",
         "/img/movies_shows/movies/defMovie.png",
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "genre": "Movie 8",
+      "genre": "Genre 8",
       "array": [
         "/img/movies_shows/movies/defMovie.png",
         "/img/movies_shows/movies/defMovie.png",

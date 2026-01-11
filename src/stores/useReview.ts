@@ -2,11 +2,11 @@ import { create } from "zustand";
 import axios from "axios";
 
 type FormDataType = {
-    nickname: string,
-    country: string,
-    rating: number,
-    text: string,
-}
+  nickname: string;
+  country: string;
+  rating: number;
+  text: string;
+};
 
 type Props = {
   isAdded: boolean;
@@ -17,11 +17,8 @@ type Props = {
   text: string;
   setIsClicked: (value: boolean) => void;
   setIsAdded: (value: boolean) => void;
-  addReview: (
-    object: FormDataType,
-  ) => Promise<void>;
+  addReview: (object: FormDataType) => Promise<void>;
 };
-
 
 export const useReview = create<Props>((set) => ({
   isAdded: false,

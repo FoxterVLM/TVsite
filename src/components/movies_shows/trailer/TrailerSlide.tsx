@@ -3,8 +3,8 @@ import { FiPlus } from "react-icons/fi";
 import Sound from "../../../../public/img/movies_shows/Sound.png";
 import Like from "../../../../public/img/movies_shows/Like.png";
 
-import {Link} from 'react-router-dom'
-import {useMovieData} from "../../../stores/useMovieData.ts";
+import { Link } from "react-router-dom";
+import { useMovieData } from "../../../stores/useMovieData.ts";
 
 export default function TrailerSlide({
   img,
@@ -15,8 +15,7 @@ export default function TrailerSlide({
   title: string;
   description: string;
 }) {
-
-  const {getCurrentMovie} = useMovieData();
+  const { getCurrentMovie } = useMovieData();
 
   return (
     <div
@@ -33,7 +32,7 @@ export default function TrailerSlide({
       </div>
       <div className="trailer-buttons flex justify-center items-center gap-[20px]">
         <Link
-            to={'/ms' + "/" + title}
+          to={"/ms" + "/" + title}
           className="buttons-play px-[24px] py-[14px] text-white font-[Manrope] text-[18px] font-semibold flex gap-[4px] items-center cursor-pointer bg-[#E50000] rounded-[8px]"
           onClick={() => getCurrentMovie(title)} // change to title
         >

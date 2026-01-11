@@ -9,26 +9,32 @@ import OpenBlock from "./components/movies_open/OpenBlock.tsx";
 
 import { useGetMovieSwiper } from "./stores/useGetMovieSwiper.ts";
 import { useMovieData } from "./stores/useMovieData.ts";
+import { useSearch } from "./stores/useSearch.ts";
 
 import { useEffect } from "react";
 
 function App() {
   const { getData } = useGetMovieSwiper();
   const { currentMovie } = useMovieData();
+  const { searchMovies } = useSearch();
 
   useEffect(() => {
     getData();
+    searchMovies("Avengers");
   }, []);
 
   return (
     <Router>
       <Nav />
       <Routes>
-        <Route path="/ms" element={<Movies_Shows />} />
         <Route path="/" element={<Home />} />
+        <Route path="/ms" element={<Movies_Shows />} />
         <Route path="/sub" element={<Subscription />} />
         <Route path="/support" element={<Support />} />
-        <Route path={'/ms' + "/" + currentMovie?.title} element={<OpenBlock/>}/>
+        <Route
+          path={"/ms" + "/" + currentMovie?.title}
+          element={<OpenBlock />}
+        />
       </Routes>
     </Router>
   );

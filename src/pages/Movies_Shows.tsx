@@ -1,8 +1,11 @@
-import MSblock from "../components/movies_shows/MSblock.tsx";
+import VideoTrailer from "../components/movies_shows/trailer/VideoTrailer.tsx";
+import SwiperBlock from "../components/movies_shows/SwiperBlock.tsx";
 
 export default function Movies_Shows() {
-
   return (
-      <MSblock/>
+    <div className="msPage bg-[#141414]">
+      <VideoTrailer />
+      <SwiperBlock />
+    </div>
   );
 }
