@@ -27,7 +27,7 @@ export default function Support() {
   };
 
   return (
-    <div className="bg-neutral-900 text-white min-h-screen p-10 max-w-4xl mg-full lg:full mx-auto space-y-20">
+    <div className="min-h-screen bg-neutral-950 text-white px-6 py-16 lg:px-200">
 
       <div className="mb-16">
         <h1 className="text-4xl font-bold mb-8">Welcome to our support page!</h1>
