@@ -9,18 +9,18 @@ import OpenBlock from "./components/movies_open/OpenBlock.tsx";
 
 import { useGetMovieSwiper } from "./stores/useGetMovieSwiper.ts";
 import { useMovieData } from "./stores/useMovieData.ts";
-import { useSearch } from "./stores/useSearch.ts";
+// import { useSearch } from "./stores/useSearch.ts";
 
 import { useEffect } from "react";
 
 function App() {
   const { getData } = useGetMovieSwiper();
   const { currentMovie } = useMovieData();
-  const { searchMovies } = useSearch();
+  // const { searchMovies } = useSearch();
 
   useEffect(() => {
     getData();
-    searchMovies("Avengers");
+    // searchMovies("Avengers");
   }, []);
 
   return (
