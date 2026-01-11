@@ -57,7 +57,7 @@ export default function Nav() {
               src={SearchImg}
               alt="Search"
               className="activities-search w-[34px] h-[34px] cursor-pointer"
-              onClick={() => isSearching ? setIsSearching(false) : setIsSearching(true)}
+              // onClick={() => isSearching ? setIsSearching(false) : setIsSearching(true)}
           />
         {/*</div>*/}
 

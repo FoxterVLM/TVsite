@@ -27,12 +27,13 @@ export default function Support() {
   };
 
   return (
-      <div className="min-h-screen bg-neutral-950 text-white px-6 py-16 lg:px-200">
+      <div className="min-h-screen bg-neutral-950 text-white px-6 py-16">
 
-        <div className="mb-16">
+        {/* SUPPORT FORM */}
+        <div className="mb-16 max-w-5xl mx-auto">
           <h1 className="text-4xl font-bold mb-8">Welcome to our support page!</h1>
 
-          <div className="grid grid-cols-2 gap-6 max-w-2xl">
+          <div className="grid grid-cols-2 gap-6 max-w-2xl mx-auto">
             <div>
               <input
                   className="p-4 bg-neutral-800/80 border border-neutral-700 rounded-xl w-full focus:outline-none focus:border-red-500/50"
@@ -78,14 +79,17 @@ export default function Support() {
               {errors.message && <p className="text-red-500 text-sm mt-2">{errors.message}</p>}
             </div>
 
-            <button className="p-4 rounded-xl col-span-2 font-medium hover:shadow-lg hover:scale-105 transition-transform duration-300" onClick={submitForm}>
+            <button
+                className="p-4 rounded-xl col-span-2 font-medium hover:shadow-lg hover:scale-105 transition-transform duration-300"
+                onClick={submitForm}
+            >
               Send Message
             </button>
           </div>
         </div>
 
-
-        <div>
+        {/* FAQ */}
+        <div className="max-w-5xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold">Frequently Asked Questions</h2>
             <button className="hover:scale-105 transition-transform duration-300 px-6 py-2 rounded-full font-medium whitespace-nowrap">
@@ -96,12 +100,23 @@ export default function Support() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="space-y-3">
               {faqs.slice(0, 4).map((item) => (
-                  <FAQCard key={item.id} item={item} isOpen={openId === item.id} onToggle={() => toggleFAQ(item.id)} />
+                  <FAQCard
+                      key={item.id}
+                      item={item}
+                      isOpen={openId === item.id}
+                      onToggle={() => toggleFAQ(item.id)}
+                  />
               ))}
             </div>
+
             <div className="space-y-3">
               {faqs.slice(4).map((item) => (
-                  <FAQCard key={item.id} item={item} isOpen={openId === item.id} onToggle={() => toggleFAQ(item.id)} />
+                  <FAQCard
+                      key={item.id}
+                      item={item}
+                      isOpen={openId === item.id}
+                      onToggle={() => toggleFAQ(item.id)}
+                  />
               ))}
             </div>
           </div>
@@ -128,13 +143,22 @@ const FAQCard: React.FC<FAQCardProps> = ({ item, isOpen, onToggle }) => {
             <div className="w-10 h-10 bg-neutral-700/80 group-hover:bg-neutral-600 rounded-lg flex items-center justify-center text-sm font-bold text-white/80 group-hover:text-white transition-all">
               0{item.id}
             </div>
-            <span className="text-base font-medium flex-1 pr-4">{item.question}</span>
+            <span className="text-base font-medium flex-1 pr-4">
+            {item.question}
+          </span>
           </div>
           <span className={`text-xl font-bold transition-transform duration-200 ${isOpen ? 'rotate-45 scale-110' : ''}`}>
           +
         </span>
         </button>
-        <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-32 pt-4 pb-6 px-6 border-t border-neutral-700/50' : 'max-h-0 p-0'}`}>
+
+        <div
+            className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                isOpen
+                    ? 'max-h-32 pt-4 pb-6 px-6 border-t border-neutral-700/50'
+                    : 'max-h-0 p-0'
+            }`}
+        >
           <p className="text-neutral-400 text-sm leading-relaxed">
             {item.answer}
           </p>
